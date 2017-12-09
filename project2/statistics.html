@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta charset="UTF-8"><title>Статистика</title>
+</head>
+
+<body style="background-color: rgb(200, 300, 250); color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#551a8b">
+<form action="/" method="get"> Анкета <input value="перейти" type="submit"> </form>
+<form action="/search" method="get"> К поиску <input value="перейти" type="submit"> </form>
+<form action="/json" method="get"> К данным
+в json <input value="перейти" type="submit"> </form>
+<p style="text-align: center;"><b>Статистика</b></p>
+<div style="padding: 5px; width: 330px; float: left; background-color: rgb(200, 300, 250);">
+<p>Языки, количество:</p>
+<ol> 
+{% for l in languages %} 
+<li>{{l}}</li> 
+{% endfor %} 
+</ol> </div>
+<div style="padding: 5px; width: 330px; float: left; background-color: rgb(200, 300, 250);">
+<p>Страны, количество:</p>
+<ol> 
+{% for l in lands %} 
+<li>{{t}}</li> 
+{% endfor %} 
+</ol></div>
+<div style="padding: 5px; width: 330px; float: left; background-color: rgb(200, 300, 250);">
+<p>Пол, количество:</p>
+<ol> 
+{% for s in sexs %} 
+<li>{{g}}</li> 
+{% endfor %} 
+</ol></div>
+</body></html>
