@@ -1,7 +1,7 @@
 import json
 import os
 import re
-from bs4 import BeatifulSoup
+from bs4 import BeautifulSoup
 def crawl():
     d = {}
     lst = os.listdir('thai_pages') #та же папка
